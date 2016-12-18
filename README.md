@@ -1,1 +1,1 @@
-# Marco Mangiante GitHUb repository for my blog
+# Marco Mangiante GitHub repository for my blog
