@@ -5,12 +5,12 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
+title:               Marco Mangiante
+tagline:             'Blog su Windows e dintorni'
+description:         'Un sistemista IT e Microsoft'
+url:                 http://www.professione.com
 baseurl:             ''
-paginate:            5
+paginate:            10
 
 # About/contact
 author:
