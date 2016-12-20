@@ -23,3 +23,15 @@ version:             1.0.0
 
 # Permit post excerpt
 excerpt_separator: "<!--more-->"
+
+# Gems
+
+gems:
+
+  - jekyll-redirect-from
+
+  - jekyll-sitemap
+
+  - jekyll-feed
+
+  - jekyll-paginate
