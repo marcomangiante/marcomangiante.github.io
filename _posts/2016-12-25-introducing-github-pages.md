@@ -1,12 +1,23 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: Introduzione a GitHub Pages come piattaforma per il blogging
 ---
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+[GitHub Pages](https://pages.github.com/) permette di utilizzare GitHub come piattaforma di blogging gratuita: attraverso il motore di [Jekyll](http://jekyllrb.com) i post, scritti in markdown, vengono renderizzati in html e quindi resi disponibili per la fruizione.
 
-### Built on Poole
+Per saperne di più, date una letta [qui](https://jekyllrb.com/docs/github-pages/).
 
+### Setup di Github Pages
+
+Direi che non esiste niente di più semplice:
+
+1. Si crea un repository del tipo nomeutente.github.io
+
+   <img class="img-responsive" src="/img/GitHub-Pages-Intro/GitHub-Pages-Intro-01.png"/>
+
+2. Una volta creato il repository, si sceglie un modo per clonarlo (git, GitHub Desktop, GitHub for Mac)
+
+3.  
 Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:
 
 * Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
