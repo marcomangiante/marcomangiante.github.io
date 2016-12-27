@@ -14,40 +14,119 @@ Questo post (che tra l'altro è il primo che faccio su questa nuova piattaforma)
 
 Quello che mi propongo è quello di far in modo che in pochi minuti siate in grado di scrivere un post sul vostro blog "powered by GitHub Pages".
 
-## Setup di Github Pages
+## Setup di GitHub Desktop
 
-1. Creare un repository del tipo `nomeutente.github.io` con `nomeutente` uguale a quello GitHub.
+1. Andare alla pagina [GitHub Desktop](http://desktop.github.com) e cliccare su `Download`
 
-   <img class="img-responsive" src="/img/GitHub-Pages-Intro/GitHub-Pages-Intro-01.png"/>
+   ![Download GitHub Desktop](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-01)
 
-2. Una volta creato il repository, scegliere un modo per clonarlo (git, GitHub Desktop, GitHub for Mac).
+2. Dopo qualche secondo apparirà la dialog per l'installazione del software
+
+   ![Installa GitHub Desktop](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-02)
+
+3. Il file da scaricare è di 127 MB, ci vorrà qualche attimo per scaricarlo
+
+   ![Progess GitHub Desktop](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-03)
+
+4. Terminato il download, si apre l'interfaccia per configurare il client 
+
+      i. Per prima cosa, bisogna inserire user e password di GitHub e quindi cliccare su `Log in`
+
+      ![GitHub Desktop Login](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-04)
+
+      ii. Si passa quindi alla configurazione di Git, dove vengono inseriti username e l'indirizzo mail che vorremo utilizzare per i commit
+
+      ![GitHub Git Login](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-05)
+
+      iii. Non avendo un repository da sincronizzare, cliccare su `Skip`
+
+      ![GitHub Repository Skip](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-06)
+ 
+## Setup di Github Pages e configurazione in locale
+
+1. Andare sul proprio account `GitHub` e cliccare su `New repository`.
+
+   ![GitHub creazione repository](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Pages-Intro-01)
+
+2. Creare un repository del tipo `nomeutente.github.io` con `nomeutente` uguale a quello GitHub.
+
+   ![GitHub Pages configurazione repository](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Pages-Intro-02)
+
+3. Una volta creato il repository, cliccare su `Set up in Desktop`.
+
+   ![GitHub repository nel Desktop](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Pages-Intro-03)
+
+4. Dopo aver dato l'assenso all'apertura di GitHub Desktop, il programma si apre mostrando una dialog nella quale scegliere quale sarà il percorso locale del repository: di solito viene suggerita una cartella `GitHub` sotto `Documenti`.
+
+   ![GitHub Desktop repository locale](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-07)
+
+5. A questo punto, l'intera struttura del repository su `GitHub` viene clonata in locale nella directory precedentemente individuata.
+
+   ![GitHub clone repository](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-08)
+
+6. Alla fine del processo di clone, in alto a sinistra si avrà a disposizione il link al repository.
+
+   ![GitHub link repository locale](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-08)  
 
 ## Setup del tema da utilizzare
 
-1. Andare al repository GitHub di [Lanyon](https://github.com/poole/lanyon).
+1. Andare sul repository GitHub di [Lanyon](https://github.com/poole/lanyon), cliccare su `Clone or Download` e quindi su `Scarica il file zip`. 
 
-2. Cliccare su `Clone or Download` e scaricare il file zip.
+   ![GitHub download Lanyon](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Theme-01)
 
-3. Estrarre il contenuto del file zip nella direcotry dove avete creato in precedenza il clone del vostro sito.
+2. Aprire il file zip e quindi entrare nella direcotory `lanyon-master` e copiare l'intero contenuto.
 
-4. Fare il commit e sync verso il nostro account GitHub.
+   ![GitHub copiare tema](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Theme-02)
+
+3. Incollare i file e directory copiati, nel passo precedente, nella directory creata per il repository locale.
+
+   ![GitHub incollare tema](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Theme-03)
+
+4. Andare a modificare il file `_config.yml` (basta un semplice editor di testo), commentando con un `#` la linea:
+
+   ```Markdown
+   relative_permalinks: true
+   ```
+
+5. Aprire `GitHub Desktop`, selezionare il repository creato, fare il commit aggiungendo un riepilogo e una breve descrizione.
+
+   ![GitHub commit](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Commit)
+
+6. Fare il `Publish` verso `GitHub`.
+
+   ![GitHub sync](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Publish)
 
 
-A questo punto se andate sul link `nomeutente.github.io` dovreste vedere il vostro blog bello e pronto.
+Se a questo punto andate su `https://nomeutente.github.io` dovreste vedere la struttura del vostro blog bella e pronta
 
-## Post
+![GitHub Sito](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Sito-01)
 
-1. Andate nella directory `_posts` e create un file che segua la convenzione `YYYY-mm-dd-titolo-del-post.md`.
+Se non doveste vedere alcun risultato, oppure ottenere un errore 404, andate sul vostro repository `https://github.com/nomeutente/nomeutente.github.io/settings` (per vedere la 
+pagina dovete aver fatto il login in precedenza) e verificate che nella parte `GitHub Pages` ci sia una spunta verde con vicino il commento `Your site is published at...`.
 
-2. Inserite all'inizio del file il `layout`, il `titolo` e se volete anche la `data`:
+![GitHub Settings](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Sito-02)
 
+La struttura è pronta, ma senza `post` che blog è?  
+
+## Creazione del primo Post
+
+1. Andate nel repository che avete localmente, nella directory `_posts` e create un file che segua la convenzione `YYYY-mm-dd-titolo-del-post.md`.
+
+   ![GitHub creazione file post](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Pages-Intro/GitHub-Post-01)
+
+2. Inserite all'inizio del file i marcatori `layout` e `titolo` (con valori simili a quelli nell'esempio):
+
+```Markdown
     ---
     layout: post
     title: titolo del post
-    date: 2016-12-26
     ---
+```
 
 3. Inserite il testo del post.
 
-Alcuni suggerimenti: per vedere come si formatta un testo in markdown date uno sguardo [qui](https://guides.github.com/features/mastering-markdown/).
-Per la scrittura dei post, usate il vostro editor preferito (visto che è un linguaggio semplicemente a marcatori basta anche notepad): io sto utilizzando **Visual Studio Code** che nella stessa interfaccia ha l'editor che supporta `Markdown`(che colora quindi i vari tag utilizzati), la possibilità della preview del file creato e la possibilità di connettersi all'account GitHub per il commit.
+Alcuni suggerimenti per la scrittura dei post:
+
+* per vedere come si formatta un testo in markdown, date uno sguardo [qui](https://guides.github.com/features/mastering-markdown/)
+* guardate i post di esempio, nel caso modificate direttamente quelli (io ho iniziato così per capire come funzionassero i marcatori)
+* usate il vostro editor preferito (basta anche notepad): io sto utilizzando **Visual Studio Code** che nella stessa interfaccia ha l'editor che supporta `Markdown`(che colora quindi i vari tag utilizzati), la possibilità della preview del file creato e la possibilità di connettersi all'account GitHub per il commit.
