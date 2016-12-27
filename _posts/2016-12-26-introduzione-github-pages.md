@@ -18,7 +18,7 @@ Quello che mi propongo è quello di far in modo che in pochi minuti siate in gra
 
 1. Andare alla pagina [GitHub Desktop](http://desktop.github.com) e cliccare su `Download`
 
-   ![Download GitHub Desktop](https://github.com/marcomangiante/marcomangiante.github.io/blob/master/img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-01.png)
+   ![Download GitHub Desktop](img/GitHub-Desktop-Installation/GitHub-Desktop-Installation-01.png)
 
 2. Dopo qualche secondo apparirà la dialog per l'installazione del software
 
