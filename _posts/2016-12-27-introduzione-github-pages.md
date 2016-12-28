@@ -116,12 +116,12 @@ La struttura è pronta, ma senza `post` che blog è?
 
 2. Inserite all'inizio del file i marcatori `layout` e `titolo` (con valori simili a quelli nell'esempio):
 
-```Markdown
-    ---
-    layout: post
-    title: titolo del post
-    ---
-```
+   ```Markdown
+       ---
+       layout: post
+       title: titolo del post
+       ---
+   ```
 
 3. Inserite il testo del post.
 
