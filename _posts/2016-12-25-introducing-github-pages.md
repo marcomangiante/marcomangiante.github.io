@@ -13,7 +13,7 @@ Direi che non esiste niente di più semplice:
 
 1. Si crea un repository del tipo nomeutente.github.io
 
-   <img class="img-responsive" src="/img/GitHub-Pages-Intro/GitHub-Pages-Intro-01.png"/>
+   </img class="/img-responsive" src="//img/GitHub-Pages-Intro/GitHub-Pages-Intro-01.png"/>
 
 2. Una volta creato il repository, si sceglie un modo per clonarlo (git, GitHub Desktop, GitHub for Mac)
 
