@@ -12,7 +12,7 @@ Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione
 
 ## Setup Windows Server 2016 su Azure
 
-1. Una volta connessi sal [portale di Azure](http://portal.azure.com) andare sull'icona `Virtual machines`.
+1. Una volta connessi al [portale di Azure](http://portal.azure.com) andare sull'icona `Virtual machines`.
 
    ![Azure Virtual Machines](/img/2017-01-02/Ghost/azure-01.png)
 
@@ -35,7 +35,7 @@ Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione
 6. Viene richiesto di inserire i dati di base per la creazione della virtual machine; i parametri da valorizzare sono
 
    * Name - Nome che daremo alla virtual machine
-   * VM disk type - tipo di disco che vogliamo utlizzare tra HDD e SSD
+   * VM disk type - tipo di disco che vogliamo utilizzare tra HDD e SSD
    * Username - nome utente dell'account che utilizzeremo per fare l'accesso alla virtual machine
    * Password - password dell'account che utilizzeremo per fare l'accesso alla virtual machine
    * Confirm password - stessa password inserita prima
@@ -44,7 +44,7 @@ Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione
 
    ![Azure creazione vm dati base](/img/2017-01-02/Ghost/azure-06.png)
 
-7. Una volta inseriti i dati di base per la crezione della vm, viene presentata una schermata nella quale vengono suggeriti 3 tipi di virtual machine da scegliere; se si è interessati ad una delle 3, basta cliccarci sopra e quindi cliccare su
+7. Una volta inseriti questi dati per la crezione della vm, viene presentata una schermata nella quale vengono suggeriti 3 tipi di virtual machine da scegliere; se si è interessati ad una delle 3, basta cliccarci sopra e quindi cliccare su
  `Select`.
 
    ![Azure scelta vm default](/img/2017-01-02/Ghost/azure-07.png)
@@ -67,11 +67,11 @@ Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione
 
    ![Download Node.js LTS](/img/2017-01-02/Ghost/Ghost-01.png)
 
-2. Una volta scaricato l'installer, cliccare `Next `su per iniziare l'esecuzione.
+2. Una volta scaricato l'installer, cliccare su `Next `per iniziare l'esecuzione.
 
    ![Installa Node.js](/img/2017-01-02/Ghost/Ghost-02.png)
 
-3. Come in tutti i programmi di installazione Windows, vi sarà richiesto in sequenza
+3. Come in tutti i programmi di installazione Windows, vi sarà richiesto in sequenza di
 
       i. Accettare i termini di licenza del software.
 
