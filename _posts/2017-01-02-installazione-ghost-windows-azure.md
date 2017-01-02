@@ -2,14 +2,17 @@
 layout: post
 title: Installazione della piattaforma blog Ghost in Windows Server 2016 su Azure
 ---
-Una piattaforma per il blog che mi aveva interessato molto prima di scoprire [GitHub Pages](https://pages.github.com/) è [Ghost](): mi era piaciuto il design abbastanza minimale ma pulito dell'interfaccia utente; ho provato ad installarlo su una macchina virtuale in Azure con Windows Server 2016, per capire se fosse una operazione complicata: diciamo che con qualche accortezza e un suggerimento di google sono riuscito ad ottenere una base funzionante.
-Anche se ho scelto di utilizzare `GitHub Pages` come base per i miei post, mi riprometto di utlizzare `Ghost` per un altro blog che vorrei curare, incentrato su `Nano Server`..ma come si dice..questa è un'altra storia.
+Una piattaforma per il blog che mi aveva interessato molto prima di scoprire [GitHub Pages](https://pages.github.com/) è [Ghost](): mi era piaciuto in particolare il design minimale ma pulito dell'interfaccia utente. 
 
-Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione di `Ghost` nella configurazione accennata prima.
+Ho provato ad installarlo su una macchina virtuale in Azure con Windows Server 2016, per capire se fosse una operazione complicata: diciamo che con qualche accortezza e un suggerimento di google sono riuscito ad ottenere una base funzionante.
+
+Anche se ho scelto di utilizzare GitHub Pages come base per i miei post, mi riprometto di utlizzare Ghost per un altro blog che vorrei curare, incentrato su `Windows Server 2016 - Nano Server`..ma come si dice..questa è un'altra storia.
+
+Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione di Ghost nella configurazione accennata prima.
 
 ## Setup Windows Server 2016 su Azure
 
-1. Una volta connessi sul [portale di Azure](portal.azure.com) andare sull'icona `Virtual Machines`.
+1. Una volta connessi sal [portale di Azure](http://portal.azure.com) andare sull'icona `Virtual machines`.
 
    ![Azure Virtual Machines](/img/2017-01-02/Ghost/azure-01.png)
 
@@ -27,13 +30,21 @@ Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione
 
 5. Nella schermata che appare cliccare su `Create`.
 
-   ![Azure scelta tipo deployment](/img/2017-01-02/Ghost/<azure-05></azure-05>.png)
+   ![Azure scelta tipo deployment](/img/2017-01-02/Ghost/azure-05.png)
 
-6.  In questa schermata, inserire i dati di base per la creazione della virtual machine, come ad esempio, nome della vm, user, password.
+6. Viene richiesto di inserire i dati di base per la creazione della virtual machine; i parametri da valorizzare sono
+
+   * Name - Nome che daremo alla virtual machine
+   * VM disk type - tipo di disco che vogliamo utlizzare tra HDD e SSD
+   * Username - nome utente dell'account che utilizzeremo per fare l'accesso alla virtual machine
+   * Password - password dell'account che utilizzeremo per fare l'accesso alla virtual machine
+   * Confirm password - stessa password inserita prima
+   * Subscription - si sceglie la sottoscrizione alla quale legare la virtual machine e i suoi costi
+   * Resource group -  viene richiesto se crearne uno nuovo oppure utilizzarne uno creati in precedenza
 
    ![Azure creazione vm dati base](/img/2017-01-02/Ghost/azure-06.png)
 
-7. Una volta inseriti i dati di base per la crezione della vm, viene presentata una schermata nella quale vengono suggerite 3 tipi di virtual machine da scegliere; se si è interessati ad una delle 3, basta cliccarci sopra e quindi cliccare su
+7. Una volta inseriti i dati di base per la crezione della vm, viene presentata una schermata nella quale vengono suggeriti 3 tipi di virtual machine da scegliere; se si è interessati ad una delle 3, basta cliccarci sopra e quindi cliccare su
  `Select`.
 
    ![Azure scelta vm default](/img/2017-01-02/Ghost/azure-07.png)
@@ -42,7 +53,7 @@ Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione
 
    ![Azure scelta vm](/img/2017-01-02/Ghost/azure-08.png)
 
-9. Compare la schermata dove si possono scegliere alcune caratteristiche, per esempio, dello storage, extension, etc..per ora lasciate tutto di default e cliccate su `OK`.
+9. Compare la schermata dove è possibile scegliere alcune caratteristiche, per esempio, dello storage, extension, etc..per ora lasciate tutto di default e cliccate su `OK`.
 
    ![Azure scelta opzioni sistema vm](/img/2017-01-02/Ghost/azure-09.png)
 
@@ -52,37 +63,37 @@ Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione
 
 ## Setup di Node.js
 
-1. Andare alla pagina [Node.js Download](http://nodejs.org/en/download) e cliccare su `Windows Download`
+1. Andare alla pagina [Node.js Download](http://nodejs.org/en/download) e cliccare su `Windows Download`.
 
    ![Download Node.js LTS](/img/2017-01-02/Ghost/Ghost-01.png)
 
-2. Una volta scaricato l'installer, cliccare per iniziare l'esecuzione
+2. Una volta scaricato l'installer, cliccare `Next `su per iniziare l'esecuzione.
 
    ![Installa Node.js](/img/2017-01-02/Ghost/Ghost-02.png)
 
 3. Come in tutti i programmi di installazione Windows, vi sarà richiesto in sequenza
 
-      i. Accettare i termini di licenza del software
+      i. Accettare i termini di licenza del software.
 
       ![Node.js licenza](/img/2017-01-02/Ghost/Ghost-03.png)
 
-      ii. Scegliere la directory di installazione
+      ii. Scegliere la directory di installazione.
 
       ![Node.js directory installazione](/img/2017-01-02/Ghost/Ghost-04.png)
 
-      iii. Scegliere le componenti da installare (di default, tutte)
+      iii. Scegliere le componenti da installare (di default, tutte).
 
       ![Node.js componenti installazione](/img/2017-01-02/Ghost/Ghost-05.png)
 
-      iv. Confermare cliccando sul tasto `Install`
+      iv. Confermare cliccando sul tasto `Install`.
  
       ![Node.js conferma installazione](/img/2017-01-02/Ghost/Ghost-06.png)
 
-      v. Aspettare che il Node.js si installi
+      v. Aspettare che il Node.js si installi.
 
       ![Node.js aspettare installazione](/img/2017-01-02/Ghost/Ghost-07.png)
 
-      vi. Completare l'installazione cliccando sul tasto `Finish`
+      vi. Completare l'installazione cliccando sul tasto `Finish`.
 
       ![Node.js conclusione installazione](/img/2017-01-02/Ghost/Ghost-08.png)
       
@@ -100,13 +111,12 @@ Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione
 
    ![Node.js command prompt](/img/2017-01-02/Ghost/Ghost-11.png)
 
-4. Nella command prompt cambiare directory in modo da puntare la directory di installazione di Ghost e lanciare il comando di installazione.
+4. Nella command prompt cambiare directory in modo da puntare quella di installazione di Ghost e lanciare il comando di installazione.
 
-   ```nodejs
+   ```javascript
    cd \Ghost
    npm install --production
    ```
-
    ![Ghost inizio installazione](/img/2017-01-02/Ghost/Ghost-12.png)
 
 5. L'installazione dura dai 5 ai 10 minuti.
@@ -117,10 +127,9 @@ Vi illustro per chi fosse interessato i passi che ho seguito per l'installazione
 
 1. Avviare Ghost con il comando 
 
-   ```nodejs
+   ```js
    npm Start
    ```
-
    ![Ghost avvio piattaforma](/img/2017-01-02/Ghost/Ghost-14.png)
 
 2. Nel browser basta digitare `http://127.0.0.1:2368/` per vedere la pagina iniziale generica del blog.
@@ -154,6 +163,7 @@ Per dare uno sguardo a come si presentano i post, cliccate su quello di esempio.
    ![Ghost post esempio](/img/2017-01-02/Ghost/Ghost-21.png)
 
 Per ora stiamo facendo tutto in un browser locale sulla macchina virtuale: e se volessimo vedere il nostro blog da qualsiasi altro device?
+
 Ovviamente si può fare, facendo qualche configurazione lato Azure e una lato Node.js/Ghost.
 
 ## Configurazione Azure
@@ -180,9 +190,10 @@ Per avere accesso al blog dall'esterno della macchina virtuale dobbiamo settare 
 
    ![Azure Configurazione dns](/img/2017-01-02/Ghost/azure-15.png)
 
-6. In `DNS name label` inserire un nome che utilizzeremo per richiamare da browser il nostro blog (nel caso di esempio, il nome scelto è `nanoserver4all`); una volta inserito il nome, se premete il tasto `TAB` sulla tastiera verificate se il nome è univoco nel DNS Microsoft oppure se dovete cambiarlo. Se è tutto ok, salvate cliccando in alto su `Save`.
+6. In `DNS name label` inserire un nome che utilizzeremo per richiamare da browser il nostro blog (nel caso di esempio, il nome scelto è `nanoserver4all`); una volta inserito il nome, se premete il tasto `TAB` sulla tastiera verificate se il nome è univoco nel DNS Microsoft oppure se dovete cambiarlo. 
+Se è tutto ok, salvate cliccando in alto su `Save`.
 
-   ![Azure nome dns](/img/2017-01-02/Ghost/qzure-16.png)
+   ![Azure nome dns](/img/2017-01-02/Ghost/azure-16.png)
 
 7. Andare a cliccare sulla voce che rappresenta il `Network security group` (nel nostro caso `svr-ghost-nsg`).
 
@@ -202,18 +213,18 @@ Per avere accesso al blog dall'esterno della macchina virtuale dobbiamo settare 
    * Port range = 2368
    * Action = Allow
 
-   ![Azure configurazione parametri regola inbound](/img/2017-01-02/Ghost/Ghost-19.png)
+   ![Azure configurazione parametri regola inbound](/img/2017-01-02/Ghost/azure-19.png)
 
 10. La tabella delle regole inbound dovrebbe presentarsi dopo qualche istante in questo modo.
 
-   ![Azure lista regole inbound](/img/2017-01-02/Ghost/Ghost-20.png)
+   ![Azure lista regole inbound](/img/2017-01-02/Ghost/azure-20.png)
 
 A questo punto avevo pensato di aver completato tutto: vado a fare una prova ed ottengo un errore di connessione rifiutata; all'inizio ho pensato che fosse il firewall di Windows a bloccare la comunicazione, ma anche disattivandolo il risultato era lo stesso. 
 Ho analizzato con Wireshark ma sinceramente non riuscivo a capire: ho pensato che nella comunicazione venissero passati i pacchetti contrassegnati con l'ip della rete interna su Azure e che quindi questi andasseto persi..ma non era neanche quello il problema.
 Per farla breve, cercando su google ho trovato che nel file di configurazione di Ghost, `config.js`, l'ip che viene puntato è sempre quello locale, `127.0.0.1` e quindi qualsiasi richiesta verso un altro indirizzo che non sia quello non viene presa in considerazione; per ovviare a questa situazione basta cambiare nella parte del file indicata come `development` il parametro `host` del `server`, facendolo puntare a `0.0.0.0`.
 
 ```javascript
-   host: `0.0.0.0`,
+   host: 0.0.0.0,
 ```
 
    ![config.js punta a tutti gli indirizzi](/img/2017-01-02/Ghost/Ghost-32.png)
