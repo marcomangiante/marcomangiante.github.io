@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Installazione della piattaforma blog Ghost in Windows Server 2016 su Azure
+title: Installazione della piattaforma di blog Ghost su Azure Web Apps 
 ---
+Nel mio ultimo [post](https://marcomangiante.github.io/2017/01/02/installazione-ghost-windows-azure/) ho descritto l'installazione di [Ghost]()
 Una piattaforma per il blog che mi aveva interessato molto prima di scoprire [GitHub Pages](https://pages.github.com/) è [Ghost](): mi era piaciuto il design abbastanza minimale ma pulito dell'interfaccia utente; ho provato ad installarlo su una macchina virtuale in Azure con Windows Server 2016, per capire se fosse una operazione complicata: diciamo che con qualche accortezza e un suggerimento di google sono riuscito ad ottenere una base funzionante.
 Anche se ho scelto di utilizzare `GitHub Pages` come base per i miei post, mi riprometto di utlizzare `Ghost` per un altro blog che vorrei curare, incentrato su `Nano Server`..ma come si dice..questa è un'altra storia.
 
