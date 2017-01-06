@@ -9,12 +9,16 @@ In verità ci sono 2 metodi diversi per farlo: li illustro entrambi, anche se so
 
 ## Setup via Deploy to Azure
 
-1. Andare sul repository [GitHub](http://github.com/felixrieseberg/Ghost-Azure) di Felix Rieseberg e cliccate su `Deploy to Azure` (se volete potete anche andare su [Ghost-Azure](https://github.com/AzureWebApps/Ghost-Azure), dove c'è la versione Ghost per Azure curata direttamente da Microsoft ma con una release un po' più vecchia).
+1. Andate sul repository [GitHub](http://github.com/felixrieseberg/Ghost-Azure) di Felix Rieseberg e cliccate su `Deploy to Azure` (se volete potete anche andare su [Ghost-Azure](https://github.com/AzureWebApps/Ghost-Azure), dove c'è la versione Ghost per Azure curata direttamente da Microsoft ma con una release un po' più vecchia).
 
    ![Ghost-Azure deploy](/img/2017-01-06/Ghost-AzureWebApps/ghost-azurewebapps-01.png)
 
-2. Nel browser viene caricata una form da compilare i cui campi sono
+2. Nel browser viene caricata una form da compilare
 
+   ![Ghost-Azure form data](/img/2017-01-06/Ghost-AzureWebApps/ghost-azurewebapps-02.png)
+
+   i cui campi sono
+   
 * Directory
 * Subscription - si sceglie la sottoscrizione alla quale legare la web app e i suoi costi
 * Resource Group - viene richiesto se crearne uno nuovo oppure utilizzare uno creato in precedenza
@@ -28,7 +32,6 @@ In verità ci sono 2 metodi diversi per farlo: li illustro entrambi, anche se so
   * Standard
   * Premium
 
-   ![Ghost-Azure form data](/img/2017-01-06/Ghost-AzureWebApps/ghost-azurewebapps-02.png)
 
 3. Una volta cliccato su `Next` nella form, appare una finestra che indica il tipo di risorsa che verrà creato; si clicca quindi su `Deploy`.
 
