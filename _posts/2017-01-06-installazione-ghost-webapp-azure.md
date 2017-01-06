@@ -122,12 +122,15 @@ Qualunque sia stato il metodo utilizzato per il setup di Ghost, bisogna andarlo 
 
 2. Appare l'interfaccia per la gestione del blog e la scrittura dei post.
 
-   ![Ghost gestione e creazione post](/img/2017-01-06/GitHub-Pages-Intro/ghost-azurewebapps-18.png)
+   ![Ghost gestione e creazione post](/img/2017-01-06/Ghost-AzureWebApps/ghost-azurewebapps-18.png)
 
 3. Date uno sguardo adesso al blog
 
-   ![Ghost blog](/img/2017-01-06/GitHub-Pages-Intro/ghost-azurewebapps-19.png)
+   ![Ghost blog](/img/2017-01-06/Ghost-AzureWebApps/ghost-azurewebapps-19.png)
 
 
-Vi faccio notare che in entrambi i casi la Web App è legata al repository GitHub, quindi se viene aggiornato quest'ultimo basta 
+Vi faccio notare, infine, che in entrambi i casi la Web App è legata al repository GitHub, quindi se viene aggiornato quest'ultimo basta andare nella console di gestione della vostra Web App, cliccare su `Deployment Option` e poi su `Sync`.
+
+   ![Ghost sync github repo](/img/2017-01-06/Ghost-AzureWebApps/ghost-azurewebapps-20.png)
+
 
