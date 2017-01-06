@@ -120,7 +120,7 @@ Qualunque sia stato il metodo utilizzato per il setup di Ghost, bisogna andarlo 
 
       ![Ghost team](/img/2017-01-06/Ghost-AzureWebApps/ghost-azurewebapps-17.png)
 
-4. Appare l'interfaccia per la gestione del blog e la scrittura dei post.
+2. Appare l'interfaccia per la gestione del blog e la scrittura dei post.
 
    ![Ghost gestione e creazione post](/img/2017-01-06/GitHub-Pages-Intro/ghost-azurewebapps-18.png)
 
