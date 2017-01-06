@@ -103,8 +103,8 @@ Qualunque sia stato il metodo utilizzato per il setup di Ghost, bisogna andarlo 
 
 1. Aprire una istanza del browser e inserire la url per la gestione del blog:
 
-  * Se si è utilizzato `Deploy to Azure` la url è `Site Name` + `.azurewebsites.net/ghost`.
-  * Se si è utilizzato `Azure Marketplace` la url è `App name` + `.azurewebsites.net/ghost`.
+   * Se si è utilizzato `Deploy to Azure` la url è `Site Name` + `.azurewebsites.net/ghost`.
+   * Se si è utilizzato `Azure Marketplace` la url è `App name` + `.azurewebsites.net/ghost`.
 
    In sequenza
 
