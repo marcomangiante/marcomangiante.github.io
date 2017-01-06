@@ -106,7 +106,7 @@ Qualunque sia stato il metodo utilizzato per il setup di Ghost, bisogna andarlo 
   * Se si è utilizzato `Deploy to Azure` la url è `Site Name` + `.azurewebsites.net/ghost`.
   * Se si è utilizzato `Azure Marketplace` la url è `App name` + `.azurewebsites.net/ghost`.
 
-  In sequenza
+   In sequenza
 
       i. Cliccare su `Create account`
 
