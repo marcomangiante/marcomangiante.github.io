@@ -124,7 +124,7 @@ Qualunque sia stato il metodo utilizzato per il setup di Ghost, bisogna andarlo 
 
    ![Ghost gestione e creazione post](/img/2017-01-06/GitHub-Pages-Intro/ghost-azurewebapps-18.png)
 
-Date uno sguardo adesso al blog
+3. Date uno sguardo adesso al blog
 
    ![Ghost blog](/img/2017-01-06/GitHub-Pages-Intro/ghost-azurewebapps-19.png)
 
